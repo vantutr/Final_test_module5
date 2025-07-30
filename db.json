@@ -1,0 +1,64 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "name": "Áo Thun"
+    },
+    {
+      "id": "2",
+      "name": "Áo Sơ Mi"
+    },
+    {
+      "id": "3",
+      "name": "Áo Khoác"
+    },
+    {
+      "id": "4",
+      "name": "Quần Jean"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Áo Thun Cổ Tròn Basic",
+      "importDate": "2025-07-20T10:00:00.000Z",
+      "quantity": 150,
+      "categoryId": "1"
+    },
+    {
+      "id": "2",
+      "name": "Áo Sơ Mi Dài Tay Oxford",
+      "importDate": "2025-06-15T00:00:00.000Z",
+      "quantity": 90,
+      "categoryId": "2"
+    },
+    {
+      "id": "3",
+      "name": "Áo Khoác Bomber Kaki",
+      "importDate": "2025-07-01T14:00:00.000Z",
+      "quantity": 120,
+      "categoryId": "3"
+    },
+    {
+      "id": "4",
+      "name": "Quần Jean Slim-fit",
+      "importDate": "2025-05-30T11:00:00.000Z",
+      "quantity": 200,
+      "categoryId": "4"
+    },
+    {
+      "id": "5",
+      "name": "Áo Thun In Họa Tiết",
+      "importDate": "2025-07-22T00:00:00.000Z",
+      "quantity": 70,
+      "categoryId": "1"
+    },
+    {
+      "name": "Quần jean đen",
+      "categoryId": "4",
+      "quantity": 200,
+      "importDate": "2025-07-30T00:00:00.000Z",
+      "id": "HrAoxuE"
+    }
+  ]
+}
