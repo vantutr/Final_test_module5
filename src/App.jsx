@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import ProductListPage from "./pages/ProductListPage";
 import ProductFormPage from "./pages/ProductFormPage";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 function App() {

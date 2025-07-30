@@ -3,15 +3,9 @@ import { Navbar, Nav, Container, Button } from "react-bootstrap";
 
 const Header = () => {
   return (
-    <Navbar
-      bg="dark"
-      variant="dark"
-      expand="lg"
-      sticky="top"
-      className="shadow-sm"
-    >
+    <Navbar expand="lg" sticky="top" className="app-header">
       <Container>
-        <Navbar.Brand as={Link} to="/" className="fw-bold fs-4">
+        <Navbar.Brand as={Link} to="/" className="fs-4">
           ClothingStore
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

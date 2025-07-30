@@ -109,7 +109,7 @@ const ProductFormPage = () => {
         {isEditMode ? "Cập nhật Sản phẩm" : "Thêm Sản phẩm Mới"}
       </h1>
       <Form noValidate onSubmit={handleSubmit}>
-        <Form.Group className="mb-3" controlId="name">
+        <Form.Group className="mb-4" controlId="name">
           <Form.Label>Tên sản phẩm</Form.Label>
           <Form.Control
             type="text"
@@ -123,7 +123,7 @@ const ProductFormPage = () => {
           </Form.Control.Feedback>
         </Form.Group>
 
-        <Form.Group className="mb-3" controlId="categoryId">
+        <Form.Group className="mb-4" controlId="categoryId">
           <Form.Label>Loại sản phẩm</Form.Label>
           <Form.Select
             name="categoryId"
@@ -143,9 +143,9 @@ const ProductFormPage = () => {
           </Form.Control.Feedback>
         </Form.Group>
 
-        <Row>
+        <Row className="mb-3">
           <Col md={6}>
-            <Form.Group className="mb-3" controlId="quantity">
+            <Form.Group className="mb-4" controlId="quantity">
               <Form.Label>Số lượng</Form.Label>
               <Form.Control
                 type="number"
@@ -160,7 +160,7 @@ const ProductFormPage = () => {
             </Form.Group>
           </Col>
           <Col md={6}>
-            <Form.Group className="mb-3" controlId="importDate">
+            <Form.Group className="mb-4" controlId="importDate">
               <Form.Label>Ngày nhập</Form.Label>
               <Form.Control
                 type="date"

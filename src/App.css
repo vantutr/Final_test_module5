@@ -1,26 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #4f46e5;
+  --primary-hover: #4338ca;
+  --secondary-color: #6b7280;
+  --danger-color: #ef4444;
+  --danger-hover: #dc2626;
+  --success-color: #22c55e;
+  --light-bg: #f8f9fa;
+  --white-bg: #ffffff;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --border-color: #e5e7eb;
+  --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --border-radius: 0.75rem;
+}
+
 body {
-  background-color: #f4f7f6;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--light-bg);
+  font-family: "Poppins", sans-serif;
+  color: var(--text-dark);
 }
 
 .main-container {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  background-color: var(--white-bg);
+  padding: 2.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
   margin-top: 2rem;
+  border: 1px solid var(--border-color);
 }
 
+.main-container h1 {
+  color: var(--text-dark);
+  font-weight: 700;
+}
+
+.app-header.navbar {
+  background: linear-gradient(90deg, #3c3c3c 0%, #222222 100%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0.75rem 0;
+}
+
+.app-header .navbar-brand {
+  font-weight: 600;
+  color: var(--white-bg) !important;
+}
+
+.app-header .nav-link {
+  color: #adb5bd !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.app-header .nav-link.active,
+.app-header .nav-link:hover {
+  color: var(--white-bg) !important;
+}
+
+.table {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  margin-top: -10px;
+}
+
+.table thead th {
+  background-color: transparent;
+  border: none;
+  color: var(--text-light);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.table tbody tr {
+  background-color: var(--white-bg);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.07), 0 1px 2px -1px rgb(0 0 0 / 0.07);
+  border-radius: var(--border-radius);
+  transition: all 0.2s ease-in-out;
+}
+
+.table tbody tr:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--box-shadow);
+}
+
+.table td,
 .table th {
-  background-color: #e9ecef;
+  border: none;
+  vertical-align: middle;
+}
+
+.table td:first-child,
+.table th:first-child {
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+}
+
+.table td:last-child,
+.table th:last-child {
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
+.btn {
+  border-radius: 0.5rem;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  transition: all 0.3s ease;
 }
 
 .btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .btn-primary:hover {
-  background-color: #0056b3;
-  border-color: #0056b3;
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+.btn-danger {
+  background-color: var(--danger-color);
+  border-color: var(--danger-color);
+}
+
+.btn-danger:hover {
+  background-color: var(--danger-hover);
+  border-color: var(--danger-hover);
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.btn-outline-danger {
+  color: var(--danger-color);
+  border-color: var(--danger-color);
+}
+
+.btn-outline-danger:hover {
+  color: #fff;
+  background-color: var(--danger-color);
+}
+
+.form-control,
+.form-select {
+  border-radius: 0.5rem;
+  border-color: var(--border-color);
+  padding: 0.75rem 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.25);
+}
+
+.pagination .page-link {
+  border: none;
+  border-radius: 0.5rem;
+  margin: 0 0.25rem;
+  color: var(--text-light);
+  transition: all 0.3s ease;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--primary-color);
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(79, 70, 229, 0.3);
+}
+
+.pagination .page-link:hover {
+  background-color: #e9ecef;
+}
+
+.pagination .page-item.disabled .page-link {
+  color: #ced4da;
+}
+
+.modal-content {
+  border-radius: var(--border-radius);
+  border: none;
+}
+
+.modal-header {
+  border-bottom: 1px solid var(--border-color);
 }
